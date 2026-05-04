@@ -1,0 +1,10 @@
+# [105] APB READ MATCH  | Addr = 0x6 | Expected = 0x66 | Actual = 0x66
+# [205] APB READ MATCH  | Addr = 0x6 | Expected = 0xc6 | Actual = 0xc6
+# [305] APB READ MATCH  | Addr = 0x6 | Expected = 0x72 | Actual = 0x72
+# [405] APB READ MATCH  | Addr = 0xe | Expected = 0x67 | Actual = 0x67
+# [505] APB READ MATCH  | Addr = 0xa | Expected = 0x6a | Actual = 0x6a
+# [605] APB READ MATCH  | Addr = 0x4 | Expected = 0x6f | Actual = 0x6f
+# [705] APB READ MATCH  | Addr = 0x6 | Expected = 0x35 | Actual = 0x35
+# [805] APB READ MATCH  | Addr = 0x4 | Expected = 0xae | Actual = 0xae
+# [905] APB READ MATCH  | Addr = 0xd | Expected = 0xdb | Actual = 0xdb
+# [1005] APB READ MATCH  | Addr = 0x5 | Expected = 0xe3 | Actual = 0xe3

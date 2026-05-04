@@ -4,7 +4,7 @@
 
 This project implements a SystemVerilog testbench to verify an APB slave design.
 The focus is on checking basic functionality like read/write operations, reset behavior, and error handling.
----
+
 
 ## Testbench Architecture
 

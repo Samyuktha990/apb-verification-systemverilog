@@ -2,8 +2,8 @@
 
 ## Objective
 
-Verify functional correctness of an APB slave for read/write operations, reset behavior, address handling, and error response.
-
+This project implements a SystemVerilog testbench to verify an APB slave design.
+The focus is on checking basic functionality like read/write operations, reset behavior, and error handling.
 ---
 
 ## Testbench Architecture

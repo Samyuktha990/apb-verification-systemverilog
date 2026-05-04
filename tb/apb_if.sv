@@ -30,7 +30,7 @@ modport dut(
 
 modport tb(
   output pwrite, penable, psel, pwdata, paddr,
-  input  prdata, pready, pslverr
+  input  prdata, pready, pslverr, prst, pclk
 );
 
 endinterface

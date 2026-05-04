@@ -2,7 +2,7 @@
 `define _apb_base_
 
 class apb_base;
-bit [5:0]paddr;
+bit [31:0]paddr;
 bit [31:0]pwdata;
 bit pwrite;
 bit psel;

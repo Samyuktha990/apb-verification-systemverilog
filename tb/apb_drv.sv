@@ -79,6 +79,45 @@ begin
   intf.penable <= 0;
 end
 endtask
+
+task apb_write(input [31:0] addr, input [31:0] data);
+begin
+  @(posedge intf.pclk);
+  intf.psel    <= 1;
+  intf.penable <= 0;
+  intf.paddr   <= addr;
+  intf.pwdata  <= data;
+  intf.pwrite  <= 1;
+
+  @(posedge intf.pclk);
+  intf.penable <= 1;
+
+  wait(intf.pready == 1);
+
+  @(posedge intf.pclk);
+  intf.psel    <= 0;
+  intf.penable <= 0;
+end
+endtask
+
+task apb_read(input [31:0] addr);
+begin
+  @(posedge intf.pclk);
+  intf.psel    <= 1;
+  intf.penable <= 0;
+  intf.paddr   <= addr;
+  intf.pwrite  <= 0;
+
+  @(posedge intf.pclk);
+  intf.penable <= 1;
+
+  wait(intf.pready == 1);
+
+  @(posedge intf.pclk);
+  intf.psel    <= 0;
+  intf.penable <= 0;
+end
+endtask
 endclass
 
 `endif

@@ -26,6 +26,7 @@ initial
 test=new();
 test.tb_run();
 env=new(test.cfg,intf);
+wait(intf.prst == 1);
 env.env_run();
 
 end
